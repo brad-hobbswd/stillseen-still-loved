@@ -299,7 +299,7 @@ font-size:1.1rem;
 <div class="hero">
 
 <img
-src="7D2C1D71-A19E-49FD-9235-0A7B944D8154.png"
+src="F0BA5559-46F9-4FEA-831D-72A6955B2A69.png"
 alt=
 "Still Seen Still Loved Banner">
 
@@ -307,19 +307,7 @@ alt=
 
 <section class="content">
 
-<h1 class="book-title">
 
-Still Seen,
-Still Loved
-
-</h1>
-
-<p class="subtitle">
-
-Finding God's Embrace
-When You Feel Invisible
-
-</p>
 
 <p class="description">
 
@@ -345,65 +333,15 @@ Even in quiet, you are loved."
 
 </section>
 
-<footer class="site-footer">
+<div id="footer"></div>
 
-<div class="footer-container">
-
-<div class="footer-title">
-
-<h3>
-
-Still Seen, Still Loved
-
-</h3>
-
-<p>
-
-You are seen.
-You are loved.
-You are enough.
-
-</p>
-
-</div>
-
-<nav class="footer-links">
-
-<a href="index.html">
-
-Home
-
-</a>
-
-<a href="contents.html">
-
-Contents
-
-</a>
-
-<a href="about.html">
-
-About
-
-</a>
-
-<a href="prayer.html">
-
-Daily Prayer
-
-</a>
-
-</nav>
-
-<p class="copyright">
-
-© 2025 Bradley Hobbs
-
-</p>
-
-</div>
-
-</footer>
+<script>
+fetch('footer.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('footer').innerHTML = data;
+});
+</script>
 
 </body>
 </html>
