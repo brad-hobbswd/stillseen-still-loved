@@ -369,6 +369,27 @@ font-size:1.1rem;
 
 }
 
+
+/* Landing-page navigation layout correction */
+.site-nav{
+position:sticky!important;top:0;z-index:1000;width:100%;max-width:none;margin:0;padding:10px 18px;
+background:rgba(13,18,32,.96);border-top:1px solid rgba(231,181,93,.16);
+border-bottom:1px solid rgba(231,181,93,.3);backdrop-filter:blur(14px);
+-webkit-backdrop-filter:blur(14px);box-shadow:0 8px 24px rgba(0,0,0,.22);
+}
+.site-nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.site-nav .site-brand{display:inline-block;color:var(--gold);text-decoration:none;font-family:Georgia,serif;font-size:1rem;font-style:italic;white-space:nowrap;padding:7px 0}
+.site-nav .site-nav-links{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:7px}
+.site-nav .site-nav-links a{display:inline-block;padding:7px 13px;border:1px solid transparent;border-radius:24px;color:var(--cream);text-decoration:none;font-size:.9rem;line-height:1.4}
+.site-nav .site-nav-links a:hover,.site-nav .site-nav-links a:focus-visible{color:var(--gold);border-color:rgba(231,181,93,.4);background:rgba(231,181,93,.09)}
+@media(max-width:600px){
+.site-nav{padding:9px 10px}
+.site-nav-inner{flex-direction:column;gap:5px}
+.site-nav .site-brand{font-size:.92rem;padding:2px 0}
+.site-nav .site-nav-links{width:100%;display:flex;flex-direction:row;justify-content:center;align-items:center;gap:4px}
+.site-nav .site-nav-links a{padding:7px 10px;font-size:.82rem}
+}
+
 </style>
 
 </head>
