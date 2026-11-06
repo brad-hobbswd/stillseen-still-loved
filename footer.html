@@ -1,187 +1,158 @@
 <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-heading">
+      <p class="footer-eyebrow">A message from the author</p>
+      <h3>Still Seen, Still Loved</h3>
+      <p class="footer-tagline">You are seen. You are loved. You are enough.</p>
+    </div>
 
-<div class="footer-container">
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="contents.html">Contents</a>
+      <a href="about.html">About the Author</a>
+      <a href="prayer.html">Daily Prayer</a>
+    </nav>
 
-<div class="footer-title">
+    <div class="footer-support">
+      <h4>Support the Work</h4>
+      <p>Every book, devotional, article, and study shared across these websites is freely available to read. Each resource represents hours of prayer, research, writing, editing, and care.</p>
+      <p>If these writings have encouraged you and you would like to help make future projects possible, you may support the work through either option below. Giving is entirely optional, and every reader is welcome here.</p>
+      <div class="donation-buttons">
+        <a href="https://cash.app/$brad1gabe" target="_blank" rel="noopener noreferrer" class="donate-btn">Support with Cash App</a>
+        <a href="https://paypal.me/brad1god" target="_blank" rel="noopener noreferrer" class="donate-btn">Support with PayPal</a>
+      </div>
+      <p class="footer-thanks">Thank you for reading, sharing, and being part of this journey.</p>
+    </div>
 
-<h3>
-Still Seen, Still Loved
-</h3>
-
-<p>
-You are seen. You are loved. You are enough.
-</p>
-
-</div>
-
-<nav class="footer-links">
-
-<a href="index.html">
-Home
-</a>
-
-<a href="contents.html">
-Contents
-</a>
-
-<a href="about.html">
-About
-</a>
-
-<a href="prayer.html">
-Daily Prayer
-</a>
-
-</nav>
-
-<hr class="footer-divider">
-
-<h3 class="support-title">
-
-Support My Writing
-
-</h3>
-
-<p class="support-text">
-
-Every book, devotional, article, and study shared across these websites is freely available to read. Many hours of prayer, research, writing, editing, and website development go into creating and maintaining these resources.
-
-</p>
-
-<p class="support-text">
-
-Readers who have been encouraged, blessed, or helped through these writings and would like to support future projects may donate using the options below.
-
-</p>
-
-<div class="donation-buttons">
-
-<a
-href="https://cash.app/$brad1gabe"
-target="_blank"
-rel="noopener noreferrer"
-class="donate-btn">
-
-Cash App
-
-</a>
-
-<a
-href="https://paypal.me/brad1god"
-target="_blank"
-rel="noopener noreferrer"
-class="donate-btn">
-
-PayPal
-
-</a>
-
-</div>
-
-<p class="support-text">
-
-Your support helps make future books, devotionals, studies, ministry resources, website projects, and new writing possible.
-
-</p>
-
-<p class="support-text">
-
-Suggestions for future topics, future writing projects, and future ministry resources are always welcome.
-
-</p>
-
-<p class="support-text">
-
-Thank you for reading, sharing these resources with others, and being part of this journey.
-
-</p>
-
-<hr class="footer-divider">
-
-<p class="copyright">
-
-© 2025 Bradley Hobbs
-
-</p>
-
-</div>
-
+    <div class="footer-bottom">
+      <span>Written by Bradley Hobbs</span>
+      <span>© 2025 Bradley Hobbs</span>
+    </div>
+  </div>
 </footer>
 
 <style>
-
-.footer-divider{
-
-border:none;
-
-height:1px;
-
-background:rgba(255,255,255,.12);
-
-max-width:220px;
-
-margin:35px auto;
-
+.site-footer{
+  margin-top:80px;
+  padding:58px 22px 26px;
+  background:linear-gradient(145deg,rgba(8,12,23,.96),rgba(24,31,50,.98));
+  border-top:1px solid rgba(231,181,93,.28);
+  box-shadow:0 -16px 40px rgba(0,0,0,.16);
 }
-
-.support-title{
-
-margin-bottom:20px;
-
+.footer-container{max-width:1000px;margin:0 auto;text-align:center}
+.footer-heading{margin-bottom:30px}
+.footer-eyebrow{
+  margin-bottom:9px;
+  color:var(--gold,#e7b55d);
+  font-size:.76rem;
+  letter-spacing:.18em;
+  text-transform:uppercase;
 }
-
-.support-text{
-
-max-width:800px;
-
-margin:0 auto 20px auto;
-
-line-height:1.9;
-
-opacity:.9;
-
+.footer-heading h3{
+  margin:0 0 8px;
+  color:var(--gold,#e7b55d);
+  font-family:Georgia,serif;
+  font-size:1.85rem;
+  font-weight:normal;
+  letter-spacing:.02em;
 }
-
+.footer-tagline{
+  color:var(--mist,#c7c2bd);
+  font-style:italic;
+  font-size:1rem;
+}
+.footer-links{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:10px;
+  margin:0 auto 36px;
+}
+.footer-links a{
+  display:inline-block;
+  padding:8px 16px;
+  border:1px solid rgba(231,181,93,.2);
+  border-radius:30px;
+  color:var(--cream,#f7f2ea);
+  text-decoration:none;
+  font-size:.92rem;
+  transition:background .2s ease,border-color .2s ease,color .2s ease;
+}
+.footer-links a:hover{
+  color:var(--gold,#e7b55d);
+  border-color:rgba(231,181,93,.65);
+  background:rgba(231,181,93,.08);
+}
+.footer-support{
+  max-width:790px;
+  margin:0 auto;
+  padding:30px 32px;
+  border:1px solid rgba(231,181,93,.18);
+  border-radius:18px;
+  background:rgba(255,255,255,.035);
+}
+.footer-support h4{
+  margin:0 0 14px;
+  color:var(--gold,#e7b55d);
+  font-family:Georgia,serif;
+  font-size:1.25rem;
+  font-weight:normal;
+}
+.footer-support p{
+  margin:0 auto 14px;
+  color:var(--mist,#c7c2bd);
+  font-size:.96rem;
+  line-height:1.85;
+}
 .donation-buttons{
-
-display:flex;
-
-justify-content:center;
-
-gap:15px;
-
-flex-wrap:wrap;
-
-margin:30px 0;
-
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px;
+  margin:24px 0;
 }
-
 .donate-btn{
-
-display:inline-block;
-
-padding:12px 24px;
-
-border-radius:30px;
-
-background:#ffffff;
-
-color:#111;
-
-text-decoration:none;
-
-font-weight:600;
-
-transition:.3s;
-
+  display:inline-block;
+  padding:11px 21px;
+  border:1px solid rgba(231,181,93,.55);
+  border-radius:30px;
+  background:rgba(231,181,93,.12);
+  color:var(--cream,#f7f2ea);
+  text-decoration:none;
+  font-size:.9rem;
+  font-weight:bold;
+  transition:background .2s ease,transform .2s ease;
 }
-
 .donate-btn:hover{
-
-transform:translateY(-3px);
-
-opacity:.9;
-
+  background:rgba(231,181,93,.23);
+  transform:translateY(-2px);
 }
-
+.footer-support .footer-thanks{
+  margin:18px 0 0;
+  color:var(--cream,#f7f2ea);
+  font-style:italic;
+}
+.footer-bottom{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:8px 24px;
+  margin-top:30px;
+  padding-top:20px;
+  border-top:1px solid rgba(255,255,255,.09);
+  color:rgba(199,194,189,.72);
+  font-size:.82rem;
+}
+@media(max-width:600px){
+  .site-footer{margin-top:55px;padding:42px 16px 22px}
+  .footer-heading h3{font-size:1.55rem}
+  .footer-links{gap:8px;margin-bottom:26px}
+  .footer-links a{padding:8px 12px;font-size:.86rem}
+  .footer-support{padding:24px 18px}
+  .footer-support p{font-size:.91rem}
+  .donation-buttons{flex-direction:column;align-items:stretch}
+  .donate-btn{text-align:center}
+  .footer-bottom{flex-direction:column;gap:5px}
+}
 </style>
