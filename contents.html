@@ -410,65 +410,15 @@ A Meaningful Daily Prayer
 
 </div>
 
-<footer class="site-footer">
+<div id="footer"></div>
 
-<div class="footer-container">
-
-<div class="footer-title">
-
-<h3>
-
-Still Seen, Still Loved
-
-</h3>
-
-<p>
-
-You are seen.
-You are loved.
-You are enough.
-
-</p>
-
-</div>
-
-<nav class="footer-links">
-
-<a href="index.html">
-
-Home
-
-</a>
-
-<a href="contents.html">
-
-Contents
-
-</a>
-
-<a href="about.html">
-
-About
-
-</a>
-
-<a href="prayer.html">
-
-Daily Prayer
-
-</a>
-
-</nav>
-
-<p class="copyright">
-
-© 2025 Bradley Hobbs
-
-</p>
-
-</div>
-
-</footer>
+<script>
+fetch('footer.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('footer').innerHTML = data;
+});
+</script>
 
 </body>
 </html>
