@@ -79,6 +79,39 @@ box-shadow:
 
 }
 
+
+.site-nav{
+max-width:1200px;
+margin:0 auto;
+padding:0 20px;
+}
+.site-nav ul{
+display:flex;
+justify-content:center;
+align-items:center;
+flex-wrap:wrap;
+gap:12px;
+list-style:none;
+padding:14px 18px;
+border:1px solid rgba(231,181,93,.28);
+border-radius:16px;
+background:rgba(255,255,255,.045);
+}
+.site-nav a{
+display:block;
+padding:9px 20px;
+color:var(--cream);
+text-decoration:none;
+font-size:.98rem;
+border-radius:30px;
+transition:background .25s ease,color .25s ease;
+}
+.site-nav a:hover,
+.site-nav a[aria-current="page"]{
+background:rgba(231,181,93,.14);
+color:var(--gold);
+}
+
 .content{
 
 max-width:850px;
@@ -304,6 +337,16 @@ alt=
 "Still Seen Still Loved Banner">
 
 </div>
+
+
+<nav class="site-nav" aria-label="Main navigation">
+<ul>
+<li><a href="index.html" aria-current="page">Home</a></li>
+<li><a href="contents.html">Contents</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="prayer.html">Daily Prayer</a></li>
+</ul>
+</nav>
 
 <section class="content">
 
